@@ -1,0 +1,22 @@
+// JSON du retour après avoir appelé la méthode fightTurnBased(Hero $hero , Monster $monster) de FightManager
+// Utilisé comme retour d'un appel à ajax/fightHit.php
+
+rt.heroHp
+    HP du hero PRES le combat
+
+rt.monsterHp
+    HP du monstre APRES le combat
+
+rt.status
+    status du combat, on peut notament indiquer s'il y a eu des erreurs
+
+rt.logs.[x].logLine
+    Ligne HTML qui décrit l'action qui s'est déroulé
+
+rt.logs.[x].action
+    Indique l'action qui s'est déroulée sur cette ligne précise du log
+    false : default
+    1 : hero hit monstres
+    2 : monster hit hero
+    100 : combat terminé par une victoire
+    101 : combat terminé par une victoire

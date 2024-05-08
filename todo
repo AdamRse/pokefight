@@ -1,0 +1,17 @@
+On peut utiliser la fonction fourchetteRandom() pour générer des monstres d'un niveau similaire mais aléatoires à chaque combat
+
+Combat de boss : Après un certain niveau, on ne peux plus s'entraîner, on combat le boss (créé dans fightBoss.php)
+
+//SI ON FAI UNE MAP
+-Entrainement facile
+-Entrainement difficile
+-Soin
+-Shop
+-Arène (combattre d'autres joueurs)
+
+//ADAM :
+Faire les enemis
+Fight boss
+Système tour par tour
+
+Au lieu de 2 methodes fight, peut être faire une méthode round(), si tour par tour dans un while

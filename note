@@ -1,0 +1,13 @@
+Règles de combat
+
+Les 2 :
+-inflige des dégats en fonction de la stat d'attaque
+-Chances de diminuer les dégats subits via l'armure (blocage)
+
+
+Spécificités du héros :
+-Il a une chance de survivre à un coup mortel, pour donner un dernier coup
+-Il gagne un niveau des stats et du heal après chaque victoire
+
+Techniques spécifiques au monstre :
+-Doubler les dégats de son coup le plus puissant
