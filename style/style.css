@@ -1,0 +1,235 @@
+@font-face {
+  font-family: pkmn;
+  src: url("../config/PKMN.ttf");
+}
+body{
+  font-family: pkmn;
+  overflow-x: hidden;
+}
+
+.victory{
+    color: green;
+}
+.defeat{
+    color: red;
+}
+.imgAvatar {
+    width: 200px;
+    height: 200px;
+}
+.imgAvatarSmall {
+    width: 100px;
+    height: 100px;
+}
+.lineLog .avatar{
+    display: inline-block;
+    height: 20px;
+    width: 20px;
+    margin: 0 5px;
+    border-radius: 50%;
+    border: 2px solid #000;
+}
+.logFinal{
+    font-weight: bold;
+    font-size: 1.1rem;
+}
+.logNewRound{
+  margin-top: 5px;
+}
+
+.screentext{
+    width: 750px;
+    height: 400px;
+    overflow-x: scroll;
+}
+
+.monsterimg{   
+    width: 300px;
+    height: 300px;
+    
+}
+.point1{
+    position: absolute;
+    top: 15%; left: 2%;
+}
+
+.point2{
+    position: absolute;
+    top: 8%; left: 50%;
+}
+
+.point3{
+    position: absolute;
+    top: 55%; left: 15%;
+}
+
+.point4{
+    position: absolute;
+    top: 30%; left:80%;
+}
+
+.cardpokemon{
+    background-color:#f88070;
+    position: absolute;
+    top: 53%; left:38%;
+    border-radius: 10px;
+}
+
+.textdialog{
+    height: 200px;
+    width: 600px;
+    position: absolute;
+    background-color: black;
+    top: 15%; left:35%;
+}
+
+.photomap{
+  width: 900px;
+}
+
+.herocard1{
+  position: absolute;
+  bottom: 18%; left:24%;
+}
+
+.monstercard1{
+  position: absolute;
+  bottom: 15%; left:55%;
+}
+
+.buttonfight {
+  position: absolute;
+  top: 29%; left: 10%;
+}
+.video-game-button {
+  font-size: 30pt;
+  font-family: 'Press Start 2p';
+}
+
+.video-game-button {
+	text-shadow: 1px 1px pink, -1px -1px maroon;
+	line-height: 3em;
+	text-align: center;
+	display: inline-block;
+	width: 3em;
+	-webkit-border-radius: 1.5em;
+	-moz-border-radius: 1.5em;
+	-o-border-radius: 1.5em;
+		border-radius: 1.5em;
+	background-color: red;
+	-webkit-box-shadow:  0 .2em maroon;
+	-moz-box-shadow:  0 .2em maroon;
+	-o-box-shadow:  0 .2em maroon;
+	box-shadow:  0 .2em maroon;
+	color: white;
+	margin: 5px;
+	background-color: red;
+	background-image: -o-linear-gradient(left top, pink 3%, red 22%, maroon 99%);
+	background-image: -moz-linear-gradient(left top, pink 3%, red 22%, maroon 99%);
+	background-image: -webkit-linear-gradient(left top, pink 3%, red 22%, maroon 99%);
+	background-image: linear-gradient(left top, pink 3%, red 22%, maroon 99%);
+	cursor: pointer;
+  padding-left: 5px;
+  top: 20%;
+}
+.video-game-button:active{
+	box-shadow: none;
+	position: relative;
+	top: .2em;
+}
+
+.start-btn{
+  text-align: center;
+display: inline-block;
+margin:5px;
+  font-weight: bold;
+  padding: 10px 0 10px 10px ;
+  background-color: lightgray;
+  text-shadow: -1px -1px black, 1px 1px white;
+  color: gray;
+  -webkit-border-radius: 7px;
+-moz-border-radius: 7px;
+-o-border-radius: 7px;
+border-radius: 7px;
+  box-shadow: 0 .2em gray; 
+  cursor: pointer;
+
+}
+
+.fighthebosstext{  
+  position: absolute;
+  top: 31%; left: 0%;
+}
+
+.battletrainingtext{
+  position: absolute;
+  top:24%; left: 45%;
+}
+
+.pokemoncentertext{  
+  position: absolute;
+  top: 70%; left: 10%;
+}
+
+.graveyardtext{  
+  position: absolute;
+  top: 42%; left:75%;
+}
+
+.yestext{
+  position: absolute;
+  top: 77%; left:30%;
+}
+
+.notext{
+  position: absolute;
+  top: 77%; left:60%;
+}
+
+.lineMonster{
+  color: rgb(251, 134, 134) ;
+}
+.lineHero{
+  color: #a1fab1;
+}
+
+.tomb{
+width: 400px;
+}
+
+.tombtext{
+  position: absolute;
+  top: 66%; left:22%;
+}
+
+.imgAvatarSmall1 {
+  width: 100px;
+  height: 100px;
+  filter: grayscale(1);
+  position: absolute;
+  bottom: 35%; left: 34%;
+}
+
+.haunter{
+  position: absolute;
+  top: 77%;
+  left: -50%;
+  animation: drive linear infinite 15s;
+  z-index: 5;
+}
+
+@keyframes drive {
+  0%{
+    left: -10%
+  }
+  50%{
+    left: 100%;
+    transform: scaleX(1)
+  }
+  51%{
+    transform: scaleX(-1)
+  }
+  100%{
+    transform: scaleX(-1);
+  }
+}
