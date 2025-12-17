@@ -41,3 +41,33 @@ function pageNameNoExt(){
         $rt = strrev(str_replace("/", "", $exp[1]));
     return $rt;
 }
+function get_from_env_file($key){
+    $file_env=".env";
+    if(file_exists($file_env)){
+        $lines = file($file_env, FILE_IGNORE_NEW_LINES | FILE_SKIP_EMPTY_LINES);
+        foreach ($lines as $line){
+            $line = trim($line);
+            if(empty($line))
+                continue;
+            $parts = explode('=', $line, 2);
+            if($parts[0] == $key){
+                if(!isset($parts[1]))
+                    return false;
+                return ["payload" => $parts[1] ];
+            }
+        }
+    }
+    return false;
+}
+function env($key){
+    if(isset($_SESSION['env'][$key])){
+        return $_SESSION['env'][$key];
+    }
+    elseif($value = get_from_env_file($key)){
+        $_SESSION['env'][$key]=$value['payload'];
+        return $value;
+    }
+    else{
+        die("Erreur : la clé '$key' demmandée n'existe pas dans le .env");
+    }
+}
