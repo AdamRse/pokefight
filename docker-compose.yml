@@ -1,0 +1,20 @@
+services:
+  web:
+    build:
+      context: .
+      dockerfile: .docker/Dockerfile
+    container_name: pokefight-web
+    ports:
+      - "8000:80"
+    volumes:
+      - ./:/var/www/html
+    environment:
+      - APACHE_RUN_USER=www-data
+      - APACHE_RUN_GROUP=www-data
+    restart: unless-stopped
+    networks:
+      - pokefight-network
+
+networks:
+  pokefight-network:
+    driver: bridge
