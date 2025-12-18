@@ -65,7 +65,7 @@ function env($key){
     }
     elseif($value = get_from_env_file($key)){
         $_SESSION['env'][$key]=$value['payload'];
-        return $value;
+        return $value['payload'];
     }
     else{
         die("Erreur : la clé '$key' demmandée n'existe pas dans le .env");
