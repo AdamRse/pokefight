@@ -7,7 +7,7 @@ try {
     $db_pwd=env('DB_PASSWORD');
     $db_port=env('DB_PORT');
 
-    $connexion = new PDO('mysql:host='.$db_addr.";dbname=$db_name", $db_user, $db_pwd, [
+    $connexion = new PDO('mysql:host='.$db_addr.":$db_port;dbname=$db_name", $db_user, $db_pwd, [
         PDO::ATTR_ERRMODE => PDO::ERRMODE_EXCEPTION
     ]);
 }
