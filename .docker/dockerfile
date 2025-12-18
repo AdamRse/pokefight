@@ -16,6 +16,9 @@ RUN docker-php-ext-install pdo pdo_pgsql pdo_mysql zip
 # Activer le module Apache rewrite (si jamais tu en as besoin)
 RUN a2enmod rewrite
 
+RUN echo "ServerName localhost" > /etc/apache2/conf-available/servername.conf \
+    && a2enconf servername
+
 # Copier les fichiers de l'application dans le conteneur
 COPY . /var/www/html/
 
