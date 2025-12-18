@@ -8,6 +8,7 @@ try {
     $db_port=env('DB_PORT');
 
 
+    var_dump('mysql:host='.$db_addr.";dbname=$db_name", $db_user, $db_pwd);
     $connexion = new PDO('mysql:host='.$db_addr.";dbname=$db_name", $db_user, $db_pwd, [
         PDO::ATTR_ERRMODE => PDO::ERRMODE_EXCEPTION
     ]);
